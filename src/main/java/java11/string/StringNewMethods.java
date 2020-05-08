@@ -10,6 +10,7 @@ public class StringNewMethods {
 
         var isBlank = "y ";
         System.out.println(isBlank.isBlank());
+        System.out.println(" ".isBlank());
 
         var isEmpty = "";
         System.out.println(isEmpty.isEmpty());

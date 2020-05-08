@@ -31,7 +31,7 @@ public class OptionalSamples {
         );
     }
 
-    // since java 9
+    // since java 9 
     public static Optional<String> findName(String name) {
         return search(name).or(() -> search2(name));
     }

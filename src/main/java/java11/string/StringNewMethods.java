@@ -8,7 +8,7 @@ public class StringNewMethods {
         var newContent = hiJava.repeat(2);// the repeat() method repeats string n times.
         System.out.println(newContent.equals(hiJava.concat(hiJava)));
 
-        var isBlank = " ";
+        var isBlank = "y ";
         System.out.println(isBlank.isBlank());
 
         var isEmpty = "";

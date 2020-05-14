@@ -3,6 +3,7 @@ package stackoverflow;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.security.cert.CollectionCertStoreParameters;
 import java.util.*;
@@ -58,8 +59,9 @@ public class Question23 {
 }
 
 @AllArgsConstructor
-@Data
+@Setter
 @Getter
+
 class TitleIsbnBean {
 
     private String titleName;

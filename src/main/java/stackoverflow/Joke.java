@@ -167,9 +167,8 @@ class Joke {
     }
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
-@Getter
 class Transaction {
     private final String trader;
     private final int year;
@@ -181,9 +180,7 @@ class Transaction {
 }
 
 @AllArgsConstructor
-@Getter
-@Setter
-@Data
+@Setter@Getter
 @NoArgsConstructor
 class Result {
     private Double avg;
@@ -223,7 +220,7 @@ class CompareByDisplayName implements BPADComparator {
     }
 }
 
-@Data
+@Setter@Getter
 class PortfolioFilterDto {
     private String fieldOfficeDescription;
     private String locationDescription;
@@ -232,7 +229,7 @@ class PortfolioFilterDto {
 
 }
 
-@Data
+@Setter@Getter
 class BusinessPartnerAssignmentDetail {
     private String fieldOfficeDescription;
     private String locationDescription;
@@ -241,7 +238,7 @@ class BusinessPartnerAssignmentDetail {
 
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
 class Sales {
     String month;
@@ -252,14 +249,14 @@ class Sales {
 }
 
 
-@Data
+
 @AllArgsConstructor
 class Company {
     String name;
     Logo logo;
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
 class Logo {
     int color; //can have values=1 (green),2 (red),3 (blue) ...

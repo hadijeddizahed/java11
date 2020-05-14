@@ -3,6 +3,7 @@ package stackoverflow;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -98,8 +99,9 @@ public class Question21 {
 }
 
 @AllArgsConstructor
-@Data
+@Setter
 @Getter
+
 class Token {
     private int year;
     private String type;
@@ -108,8 +110,7 @@ class Token {
 }
 
 @AllArgsConstructor
-@Data
-@Getter
+@Setter@Getter
 class TokenAnalysis {
     private String group;
     private int amount;

@@ -3,6 +3,7 @@ package stackoverflow;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,22 +34,21 @@ public class Question15 {
     }
 }
 
-@Data
+@Setter
 @Getter
+
 @AllArgsConstructor
 class A {
     private List<B> bList;
 }
 
-@Getter
-@Data
+@Setter@Getter
 @AllArgsConstructor
 class B {
     private List<C> cList;
 }
 
 @Getter
-@Data
 @AllArgsConstructor
 class C {
     private String name;

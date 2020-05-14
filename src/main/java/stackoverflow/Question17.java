@@ -2,6 +2,8 @@ package stackoverflow;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.Comparator;
@@ -70,7 +72,8 @@ public class Question17 {
     }
 }
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 class Person {
     private String firstName;
@@ -78,7 +81,7 @@ class Person {
     private String country;
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
 class BookingRoom{
 

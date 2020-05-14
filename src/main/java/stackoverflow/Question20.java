@@ -3,6 +3,7 @@ package stackoverflow;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.*;
 import java.util.function.Function;
@@ -106,7 +107,6 @@ public class Question20 {
 }
 
 @AllArgsConstructor
-@Data
 @Getter
 class Customer {
     private int id;
@@ -114,8 +114,9 @@ class Customer {
 }
 
 @AllArgsConstructor
-@Data
+@Setter
 @Getter
+
 class Pair {
     int get;
     int need;

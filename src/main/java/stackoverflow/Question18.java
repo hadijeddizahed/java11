@@ -3,6 +3,7 @@ package stackoverflow;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.*;
 import java.util.function.BiFunction;
@@ -80,9 +81,10 @@ public class Question18 {
     }
 }
 
-@Data
-@AllArgsConstructor
+@Setter
 @Getter
+@AllArgsConstructor
+
 class itemsDTO {
 
     double quantity;
@@ -91,9 +93,9 @@ class itemsDTO {
 
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
-@Getter
+
 class MyClass {
 
     String property1;
@@ -102,9 +104,8 @@ class MyClass {
 
 }
 
-@Data
+@Setter@Getter
 @AllArgsConstructor
-@Getter
 class Item0 {
     private Integer id;
     private String type;
